@@ -4,8 +4,8 @@
     <title>My Blog</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media-queries.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
   </head>
   <body>
     <div class="container">
@@ -13,55 +13,18 @@
         <h1>Welcome to My Blog</h1>
       </div>
 
-      <div class="sidebar">
+      <div id="sidebarContainer" class="sidebar">
         <!-- Sidebar content goes here -->
-        <h3>Categories</h3>
-        <ul>
-          <li>Category 1</li>
-          <li>Category 2</li>
-          <li>Category 3</li>
-        </ul>
       </div>
 
-      <div class="content">
-        <div class="post">
-          <h2>First Blog Post</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            vehicula mauris at ante consequat, vitae finibus sapien vulputate.
-            Donec non enim quis risus ultricies fringilla. Nulla facilisi. Morbi
-            tristique dui mauris, ac consectetur purus euismod et. Vivamus sit
-            amet sem vel orci pulvinar lacinia. Sed a malesuada lacus.
-          </p>
-          <a href="post/post.html">Read More</a>
-        </div>
-
-        <div class="post">
-          <h2>Second Blog Post</h2>
-          <p>
-            Aliquam a risus quis ex cursus malesuada a eget odio. Etiam ac
-            dapibus quam. Nam aliquet ex a est efficitur, vitae bibendum nunc
-            efficitur. Ut in nibh sit amet ligula congue consequat. Morbi
-            sollicitudin ante sed ex bibendum dapibus. Nulla convallis semper
-            felis sed consectetur. Sed euismod libero a purus consectetur
-            pellentesque.
-          </p>
-          <a href="post/post.html">Read More</a>
-        </div>
-
-        <div class="post">
-          <h2>Third Blog Post</h2>
-          <p>
-            Maecenas vitae purus vel urna elementum cursus in eu risus. Nullam
-            vel lorem et dolor ultrices efficitur. Sed sem ipsum, consequat sed
-            malesuada eu, volutpat in ante. Curabitur aliquam elit nec nunc
-            dictum interdum. Nunc facilisis dui a neque consequat, id viverra
-            dui vestibulum. Aenean ut ligula pharetra, lacinia erat id, volutpat
-            urna.
-          </p>
-          <a href="post/post.html">Read More</a>
-        </div>
+      <div class="content" id="postContainer">
+        <!-- Blog post content will be dynamically generated here -->
       </div>
     </div>
+
+    <!-- <script src="js/posts.js"></script>
+    <script src="js/sidebar.js"></script> -->
+    <script type="module" src="js/posts.js"></script>
+    <script type="module" src="js/sidebar.js"></script>
   </body>
 </html>
