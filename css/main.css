@@ -1,8 +1,8 @@
 @import "typography.css";
 @import "colors.css";
-/* @import url("posts.css"); */
+@import "header.css";
 @import "posts.css";
-@import url("sidebar.css");
+@import "sidebar.css";
 
 body {
   margin: 0;
@@ -11,4 +11,8 @@ body {
 
 h1 {
   color: #333;
+}
+
+p {
+  text-align: justify;
 }

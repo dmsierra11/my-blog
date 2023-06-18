@@ -1,0 +1,38 @@
+@import "colors.css";
+
+.header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+
+.logo img {
+  height: 64px;
+  width: auto;
+  margin-right: 12px;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+}
+
+.navigation ul li {
+  margin-right: 10px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+}
+
+.navigation ul li a:hover {
+  text-decoration: underline;
+}

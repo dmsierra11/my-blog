@@ -10,20 +10,63 @@
   <body>
     <div class="container">
       <div class="header">
-        <h1>Welcome to My Blog</h1>
+        <div class="logo">
+          <!-- Logo or branding image goes here -->
+          <img src="../images/logo.png" alt="Logo">
+          <h1>My Blog</h1>
+        </div>
+        <nav class="navigation">
+          <!-- Navigation links or menu goes here -->
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
       </div>
 
-      <div id="sidebarContainer" class="sidebar">
-        <!-- Sidebar content goes here -->
+      <!-- <div id="sidebarContainer" class="sidebar">
+        
+      </div> -->
+
+      <div class="sidebar">
+        <button id="hamburger" class="hamburger">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+        <h3>Categories</h3>
+        <ul>
+          <li>Category 1</li>
+          <li>Category 2</li>
+          <li>Category 3</li>
+        </ul>
       </div>
 
-      <div class="content" id="postContainer">
+      <div class="content">
+        <div id="aboutContainer">
+          <h1>About</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis iaculis commodo magna, ac fringilla justo bibendum at. Curabitur lacinia, nisl nec sollicitudin consequat, nulla purus efficitur justo, ac tristique nulla purus non tellus. Phasellus vel magna mauris. Vivamus varius auctor ligula, in euismod nisi. Maecenas pellentesque nibh eu nunc lacinia, in viverra urna tincidunt. Aenean rutrum massa id lorem convallis, eu efficitur erat aliquam. Proin ultrices dapibus ultrices. Vestibulum vel ex eu arcu cursus convallis. In eget eleifend eros. Aliquam euismod ipsum et ligula sollicitudin elementum.
+
+Nulla sagittis metus nec neque semper, id luctus sapien placerat. Maecenas at eros non tortor eleifend ultricies. Pellentesque ac dui lectus. Sed id metus consequat, lobortis quam non, finibus felis. Fusce malesuada auctor arcu, sed vestibulum metus semper ac. Nam dictum, ante eu efficitur consequat, lectus neque fringilla metus, vitae malesuada lectus lectus vel urna. Quisque efficitur cursus dui a ultrices. Vestibulum cursus neque ac odio ultricies, non posuere odio facilisis. Nullam vulputate massa vitae interdum feugiat. Vestibulum consectetur auctor bibendum. Integer lobortis, sapien vel commodo fringilla, lacus sem convallis enim, sed volutpat orci eros ut sem.
+
+Aenean ut fermentum nunc. Suspendisse eleifend finibus vestibulum. Vestibulum feugiat metus vel elit commodo, ut sagittis est suscipit. Morbi sed massa in tortor lacinia sollicitudin non sed est. Nam hendrerit facilisis mauris, sit amet vestibulum purus tristique vitae. In a nisl non lacus efficitur luctus auctor in tellus. Nullam sit amet sapien nec massa mollis suscipit. Suspendisse ut lacus in nulla feugiat sollicitudin id ut erat. Vestibulum ut justo in massa consectetur fermentum non id ligula. Ut lobortis tincidunt urna, sed congue tellus eleifend ut. Sed dignissim ipsum non orci placerat rhoncus.
+          </p>
+          </p>
+        </div>
+
+        <div id="postContainer">
+          <h1>Posts</h1>
+        </div>
         <!-- Blog post content will be dynamically generated here -->
+      </div>
+
+      <div class="footer">
+        <h1>Footer</h1>
       </div>
     </div>
 
-    <!-- <script src="js/posts.js"></script>
-    <script src="js/sidebar.js"></script> -->
     <script type="module" src="js/posts.js"></script>
     <script type="module" src="js/sidebar.js"></script>
   </body>
