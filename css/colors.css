@@ -1,0 +1,47 @@
+/* Colors */
+body {
+  background-color: #ffffff; /* White background */
+  color: #333333; /* Dark gray color for body text */
+}
+
+h1,
+h2,
+h3 {
+  color: #008000; /* Green color for headings */
+}
+
+a {
+  color: #008000; /* Green color for links */
+}
+
+.container {
+  background-color: #f8f8f8; /* Light gray background for container */
+}
+
+.header {
+  background-color: #ffffff; /* White background for header */
+}
+
+.sidebar {
+  background-color: #f8f8f8; /* Light gray background for sidebar */
+}
+
+.content {
+  background-color: #ffffff; /* White background for content area */
+}
+
+.post {
+  border-bottom: 10px solid #008000;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.post h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.post p {
+  color: #666;
+  line-height: 1.5;
+}

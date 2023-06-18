@@ -1,8 +1,10 @@
-@import url("posts.css");
+@import "typography.css";
+@import "colors.css";
+/* @import url("posts.css"); */
+@import "posts.css";
 @import url("sidebar.css");
 
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
 }
