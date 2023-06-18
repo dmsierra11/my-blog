@@ -1,0 +1,15 @@
+.post {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.post h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.post p {
+  color: #666;
+  line-height: 1.5;
+}
