@@ -1,0 +1,96 @@
+/* Colors */
+/* Custom properties */
+:root {
+  --light-color: #fff;
+  --light-color-alt: #afb6cd;
+  --primary-background-color: #131417;
+  --secondary-background-color: #252830;
+  --hover-light-color: var(--light-color);
+  --hover-dark-color: var(--primary-background-color);
+  --gradient-color: linear-gradient(
+    115deg,
+    #4fcf70,
+    #fad648,
+    #a767e5,
+    #12bcfe,
+    #44ce7b
+  );
+  --transparent-light-color: rgba(255, 255, 255, 0.05);
+  --transparent-dark-color: rgba(0, 0, 0, 0.75);
+}
+
+body {
+  color: var(--light-color-alt);
+  background-color: var(--primary-background-color);
+}
+
+input,
+button {
+  color: inherit;
+  background-color: transparent;
+}
+
+.header {
+  background-color: var(--secondary-background-color);
+}
+
+.logo {
+  color: var(--light-color);
+}
+
+.menu {
+  background-color: var(--secondary-background-color);
+}
+
+.list-link.current {
+  color: var(--light-color);
+}
+
+.list-link:hover,
+.btn:hover,
+.btn:hover span {
+  color: var(--light-color);
+}
+
+.form-input,
+.form-btn {
+  color: var(--light-color-alt);
+}
+
+.form-input {
+  background-color: var(--primary-background-color);
+}
+
+.form-btn {
+  background-color: var(--secondary-background-color);
+}
+
+.form-close-btn {
+  border: 2px solid var(--secondary-background-color);
+}
+
+.headline-banner {
+  background-color: var(--secondary-background-color);
+}
+
+.headline {
+  background-color: #000;
+  color: var(--light-color);
+}
+
+.article-category {
+  background-color: var(--primary-background-color);
+  color: var(--light-color);
+}
+
+.article-category:hover {
+  background-color: var(--transparent-dark-color);
+}
+
+.title {
+  color: var(--light-color);
+}
+
+.article-data-spacer {
+  background-color: var(--light-color-alt);
+}
