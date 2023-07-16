@@ -1,46 +1,96 @@
 /* Colors */
+/* Custom properties */
+:root {
+  --light-color: #fff;
+  --light-color-alt: #afb6cd;
+  --primary-background-color: #131417;
+  --secondary-background-color: #252830;
+  --hover-light-color: var(--light-color);
+  --hover-dark-color: var(--primary-background-color);
+  --gradient-color: linear-gradient(
+    115deg,
+    #4fcf70,
+    #fad648,
+    #a767e5,
+    #12bcfe,
+    #44ce7b
+  );
+  --transparent-light-color: rgba(255, 255, 255, 0.05);
+  --transparent-dark-color: rgba(0, 0, 0, 0.75);
+}
+
 body {
-  background-color: #ffffff; /* White background */
-  color: #333333; /* Dark gray color for body text */
+  color: var(--light-color-alt);
+  background-color: var(--primary-background-color);
 }
 
-h1,
-h2,
-h3 {
-  color: #008000; /* Green color for headings */
-}
-
-a {
-  color: #008000; /* Green color for links */
-}
-
-.container {
-  background-color: #f8f8f8; /* Light gray background for container */
+input,
+button {
+  color: inherit;
+  background-color: transparent;
 }
 
 .header {
-  background-color: #ffffff; /* White background for header */
-  border-bottom: 1px solid #ccc;
+  background-color: var(--secondary-background-color);
 }
 
-.sidebar {
-  background-color: #f8f8f8; /* Light gray background for sidebar */
+.logo {
+  color: var(--light-color);
 }
 
-.content {
-  background-color: #ffffff; /* White background for content area */
+.menu {
+  background-color: var(--secondary-background-color);
 }
 
-.post {
-  border: 1px solid #ccc;
+.list-link.current {
+  color: var(--light-color);
 }
 
-.post h2 {
-  color: #333;
-  margin-bottom: 10px;
+.list-link:hover,
+.btn:hover,
+.btn:hover span {
+  color: var(--light-color);
 }
 
-.post p {
-  color: #666;
-  line-height: 1.5;
+.form-input,
+.form-btn {
+  color: var(--light-color-alt);
+}
+
+.form-input {
+  background-color: var(--primary-background-color);
+}
+
+.form-btn {
+  background-color: var(--secondary-background-color);
+}
+
+.form-close-btn {
+  border: 2px solid var(--secondary-background-color);
+}
+
+.headline-banner {
+  background-color: var(--secondary-background-color);
+}
+
+.headline {
+  background-color: #000;
+  color: var(--light-color);
+}
+
+.article-category {
+  background-color: var(--primary-background-color);
+  color: var(--light-color);
+}
+
+.article-category:hover {
+  background-color: var(--transparent-dark-color);
+}
+
+.title {
+  color: var(--light-color);
+}
+
+.article-data-spacer {
+  background-color: var(--light-color-alt);
 }

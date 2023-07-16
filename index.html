@@ -1,73 +1,382 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My Blog</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/media-queries.css" />
+    <title>Completed - NewsFlash | Home</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon.png"
+    />
+    <!-- Remix icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="header">
-        <div class="logo">
-          <!-- Logo or branding image goes here -->
-          <img src="../images/logo.png" alt="Logo">
-          <h1>My Blog</h1>
-        </div>
-        <nav class="navigation">
-          <!-- Navigation links or menu goes here -->
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="navbar container">
+        <a href="./index.html">
+          <h2 class="logo">My Personal Blog</h2>
+        </a>
+
+        <div class="menu" id="menu">
+          <ul class="list">
+            <li class="list-item">
+              <a href="#" class="list-link current">Home</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Categories</a>
+            </li>
+            <!-- TODO add drop down menu -->
+            <!-- <div class=".dropmenu">
+                        <ul class="footer-list list">
+                            <li class="list-item">
+                                <a href="#" class="list-link">Travel</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link">Food</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link">Technology</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link">Health</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link">Nature</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link">Fitness</a>
+                            </li>
+                        </ul>
+                    </div> -->
+            <li class="list-item">
+              <a href="#" class="list-link">Contact</a>
+            </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
+    </header>
 
-      <!-- <div id="sidebarContainer" class="sidebar">
-        
-      </div> -->
-
-      <div class="sidebar">
-        <button id="hamburger" class="hamburger">
-          <span class="hamburger__line"></span>
-          <span class="hamburger__line"></span>
-          <span class="hamburger__line"></span>
-        </button>
-        <h3>Categories</h3>
-        <ul>
-          <li>Category 1</li>
-          <li>Category 2</li>
-          <li>Category 3</li>
-        </ul>
-      </div>
-
-      <div class="content">
-        <div id="aboutContainer">
-          <h1>About</h1>
+    <!-- Featured articles -->
+    <section class="featured-articles section section-header-offset">
+      <div class="container">
+        <h2 class="title section-title" data-name="Older posts">About me</h2>
+        <div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis iaculis commodo magna, ac fringilla justo bibendum at. Curabitur lacinia, nisl nec sollicitudin consequat, nulla purus efficitur justo, ac tristique nulla purus non tellus. Phasellus vel magna mauris. Vivamus varius auctor ligula, in euismod nisi. Maecenas pellentesque nibh eu nunc lacinia, in viverra urna tincidunt. Aenean rutrum massa id lorem convallis, eu efficitur erat aliquam. Proin ultrices dapibus ultrices. Vestibulum vel ex eu arcu cursus convallis. In eget eleifend eros. Aliquam euismod ipsum et ligula sollicitudin elementum.
-
-Nulla sagittis metus nec neque semper, id luctus sapien placerat. Maecenas at eros non tortor eleifend ultricies. Pellentesque ac dui lectus. Sed id metus consequat, lobortis quam non, finibus felis. Fusce malesuada auctor arcu, sed vestibulum metus semper ac. Nam dictum, ante eu efficitur consequat, lectus neque fringilla metus, vitae malesuada lectus lectus vel urna. Quisque efficitur cursus dui a ultrices. Vestibulum cursus neque ac odio ultricies, non posuere odio facilisis. Nullam vulputate massa vitae interdum feugiat. Vestibulum consectetur auctor bibendum. Integer lobortis, sapien vel commodo fringilla, lacus sem convallis enim, sed volutpat orci eros ut sem.
-
-Aenean ut fermentum nunc. Suspendisse eleifend finibus vestibulum. Vestibulum feugiat metus vel elit commodo, ut sagittis est suscipit. Morbi sed massa in tortor lacinia sollicitudin non sed est. Nam hendrerit facilisis mauris, sit amet vestibulum purus tristique vitae. In a nisl non lacus efficitur luctus auctor in tellus. Nullam sit amet sapien nec massa mollis suscipit. Suspendisse ut lacus in nulla feugiat sollicitudin id ut erat. Vestibulum ut justo in massa consectetur fermentum non id ligula. Ut lobortis tincidunt urna, sed congue tellus eleifend ut. Sed dignissim ipsum non orci placerat rhoncus.
+            Welcome to the inception of my blog—a captivating journey awaits!
+            Here, you'll find a delightful blend of technical insights,
+            philosophical ponderings, book summaries, career advice, and much
+            more.
           </p>
+          <br />
+          <p>
+            From the fascinating realm of technology to the depths of profound
+            philosophy, this blog is a tapestry of diverse topics that will
+            stimulate your mind and broaden your horizons. Prepare to be
+            inspired, educated, and entertained as we embark on this adventure
+            together.
+          </p>
+          <br />
+          <p>
+            Whether you're a curious tech enthusiast, a deep thinker, or someone
+            seeking guidance in various aspects of life, this blog is your
+            trusted companion. Join me as we explore the realms of knowledge,
+            challenge our assumptions, and discover the wonders of existence.
+            Let's embark on this remarkable journey of learning, growth, and
+            personal development.
           </p>
         </div>
+      </div>
+    </section>
 
-        <div id="postContainer">
-          <h1>Posts</h1>
+    <!-- Older posts -->
+    <section class="older-posts section">
+      <div class="container">
+        <h2 class="title section-title" data-name="Older posts">Older posts</h2>
+
+        <div class="older-posts-grid-wrapper d-grid">
+          <a href="/post.html" class="article d-grid">
+            <div class="older-posts-article-image-wrapper">
+              <img
+                src="./images/posts/older_posts/older_post1.jpg"
+                alt=""
+                class="article-image"
+              />
+            </div>
+
+            <div class="article-data-container">
+              <div class="article-data">
+                <span>23 Dec 2021</span>
+                <span class="article-data-spacer"></span>
+                <span>3 Min read</span>
+              </div>
+
+              <h3 class="title article-title">Sample article title</h3>
+              <p class="article-description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Similique a tempore sapiente corporis, eaque fuga placeat odit
+                voluptatibus.
+              </p>
+            </div>
+          </a>
+
+          <a href="/post.html" class="article d-grid">
+            <div class="older-posts-article-image-wrapper">
+              <img
+                src="./images/posts/older_posts/older_post2.jpg"
+                alt=""
+                class="article-image"
+              />
+            </div>
+
+            <div class="article-data-container">
+              <div class="article-data">
+                <span>23 Dec 2021</span>
+                <span class="article-data-spacer"></span>
+                <span>3 Min read</span>
+              </div>
+
+              <h3 class="title article-title">Sample article title</h3>
+              <p class="article-description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Similique a tempore sapiente corporis, eaque fuga placeat odit
+                voluptatibus.
+              </p>
+            </div>
+          </a>
+
+          <a href="/post.html" class="article d-grid">
+            <div class="older-posts-article-image-wrapper">
+              <img
+                src="./images/posts/older_posts/older_post3.jpg"
+                alt=""
+                class="article-image"
+              />
+            </div>
+
+            <div class="article-data-container">
+              <div class="article-data">
+                <span>23 Dec 2021</span>
+                <span class="article-data-spacer"></span>
+                <span>3 Min read</span>
+              </div>
+
+              <h3 class="title article-title">Sample article title</h3>
+              <p class="article-description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Similique a tempore sapiente corporis, eaque fuga placeat odit
+                voluptatibus.
+              </p>
+            </div>
+          </a>
+
+          <a href="/post.html" class="article d-grid">
+            <div class="older-posts-article-image-wrapper">
+              <img
+                src="./images/posts/older_posts/older_post4.jpg"
+                alt=""
+                class="article-image"
+              />
+            </div>
+
+            <div class="article-data-container">
+              <div class="article-data">
+                <span>23 Dec 2021</span>
+                <span class="article-data-spacer"></span>
+                <span>3 Min read</span>
+              </div>
+
+              <h3 class="title article-title">Sample article title</h3>
+              <p class="article-description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Similique a tempore sapiente corporis, eaque fuga placeat odit
+                voluptatibus.
+              </p>
+            </div>
+          </a>
+
+          <a href="/post.html" class="article d-grid">
+            <div class="older-posts-article-image-wrapper">
+              <img
+                src="./images/posts/older_posts/older_post5.jpg"
+                alt=""
+                class="article-image"
+              />
+            </div>
+
+            <div class="article-data-container">
+              <div class="article-data">
+                <span>23 Dec 2021</span>
+                <span class="article-data-spacer"></span>
+                <span>3 Min read</span>
+              </div>
+
+              <h3 class="title article-title">Sample article title</h3>
+              <p class="article-description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Similique a tempore sapiente corporis, eaque fuga placeat odit
+                voluptatibus.
+              </p>
+            </div>
+          </a>
+
+          <a href="/post.html" class="article d-grid">
+            <div class="older-posts-article-image-wrapper">
+              <img
+                src="./images/posts/older_posts/older_post6.jpg"
+                alt=""
+                class="article-image"
+              />
+            </div>
+
+            <div class="article-data-container">
+              <div class="article-data">
+                <span>23 Dec 2021</span>
+                <span class="article-data-spacer"></span>
+                <span>3 Min read</span>
+              </div>
+
+              <h3 class="title article-title">Sample article title</h3>
+              <p class="article-description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Similique a tempore sapiente corporis, eaque fuga placeat odit
+                voluptatibus.
+              </p>
+            </div>
+          </a>
         </div>
-        <!-- Blog post content will be dynamically generated here -->
-      </div>
 
-      <div class="footer">
-        <h1>Footer</h1>
+        <div class="see-more-container">
+          <a href="#" class="btn see-more-btn place-items-center"
+            >See more <i class="ri-arrow-right-s-line"></i
+          ></a>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <script type="module" src="js/posts.js"></script>
-    <script type="module" src="js/sidebar.js"></script>
+    <!-- Newsletter -->
+    <section class="newsletter section">
+      <div class="container">
+        <div class="form-container-inner">
+          <h6 class="title newsletter-title">Subscribe to my blog</h6>
+          <p class="newsletter-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing quaerat
+            dignissimos.
+          </p>
+
+          <form action="" class="form">
+            <input
+              class="form-input"
+              type="text"
+              placeholder="Enter your email address"
+            />
+            <button class="btn form-btn" type="submit">
+              <i class="ri-mail-send-line"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section">
+      <div class="footer-container container d-grid">
+        <div class="company-data">
+          <a href="./index.html">
+            <h2 class="logo">My Personal Blog</h2>
+          </a>
+          <p class="company-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+            iure. Harum, animi dolores, nam, ad magni expedita.
+          </p>
+
+          <ul class="list social-media">
+            <li class="list-item">
+              <a href="#" class="list-link"
+                ><i class="ri-instagram-line"></i
+              ></a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link"
+                ><i class="ri-facebook-circle-line"></i
+              ></a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link"><i class="ri-twitter-line"></i></a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link"
+                ><i class="ri-pinterest-line"></i
+              ></a>
+            </li>
+          </ul>
+
+          <span class="copyright-notice"
+            >&copy;2021 My Personal Blog. All rights reserved.</span
+          >
+        </div>
+
+        <!-- <div>
+                <h6 class="title footer-title">Categories</h6>
+                
+                <ul class="footer-list list">
+                    <li class="list-item">
+                        <a href="#" class="list-link">Travel</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Food</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Technology</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Health</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Nature</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Fitness</a>
+                    </li>
+                </ul>
+
+            </div> -->
+
+        <div>
+          <h6 class="title footer-title">Company</h6>
+
+          <ul class="footer-list list">
+            <li class="list-item">
+              <a href="#" class="list-link">Contact us</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">F.A.Q</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Careers</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Authors</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Memberships</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper.js -->
+    <script src="./js/posts/swiper-bundle.min.js"></script>
+    <!-- Custom script -->
+    <script src="./js/posts/main.js"></script>
   </body>
 </html>
